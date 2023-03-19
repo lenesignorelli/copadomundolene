@@ -1,4 +1,5 @@
 
+import Selecao from './components/Selecao';
 import './App.css';
 
 const selecoes = [
@@ -41,7 +42,11 @@ function App() {
     <div className="App">
       <h1>Copa do Mundo 2022</h1>
       <div>
-        TABELA
+        {
+          selecoes.map(paises => 
+            <Selecao key={paises.sigla} nomePais={paises.nome}
+                     siglaPais={paises.sigla} grupoPais={paises.grupo}/>)
+        }
       </div>
     </div>
   );
