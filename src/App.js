@@ -39,7 +39,10 @@ const selecoes = [
 function App() {
   return (
     <div className="App">
-      OLA
+      <h1>Copa do Mundo 2022</h1>
+      <div>
+        TABELA
+      </div>
     </div>
   );
 }
